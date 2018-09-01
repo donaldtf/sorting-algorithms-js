@@ -1,3 +1,3 @@
-export function insertionSort() {
-  return true
+export function insertionSort(array) {
+  return array
 }

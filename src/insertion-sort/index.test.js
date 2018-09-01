@@ -1,12 +1,9 @@
 import test from 'ava';
 import { insertionSort } from './';
+import { testCases } from '../test-cases';
 
-test('my passing test', t => {
-	const expected = [];
-	const result = insertionSort();
-	t.deepEqual(result, expected);
-});
-
-test('my failing test', t => {
-	t.fail();
-});
+testCases.forEach((testCase) => {
+	test(`insertion sort - ${testCase.name}`, t => {
+		t.deepEqual(insertionSort(testCase.input), testCase.expected);
+	});
+})
