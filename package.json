@@ -15,6 +15,7 @@
   "@babel/register": "^7.0.0",
   "ava": "^0.25.0",
   "babel-cli": "^6.26.0",
+  "babel-preset-env": "2.0.0-alpha.20",
   "babel-preset-latest": "^6.24.1"
  },
  "ava": {
